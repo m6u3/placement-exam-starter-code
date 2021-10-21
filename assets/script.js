@@ -28,14 +28,14 @@ document.querySelector('#add-gb').addEventListener('click', function() {
     
     gbQtyCell.textContent = gb;
     
-    console.log('Ginger bread + button was clicked!', gb);
+    // console.log('Ginger bread + button was clicked!', gb);
     
     //now lets add the totals
     total = total + 1;
     
     // update the cell
      totalQtyCell.textContent = total;
-    console.log('total cookies are!', total);
+    // console.log('total cookies are!', total);
 })
 
 //Event listener for the minus button for gb.
@@ -45,17 +45,75 @@ document.querySelector('#minus-gb').addEventListener('click', function(){
         //this expression will onlu execute if gb is greater than zero!
         gb = gb - 1;
 
-        console.log('Ginger bread - button was clicked!', gb);
+        // console.log('Ginger bread - button was clicked!', gb);
         //now update the cell
         gbQtyCell.textContent = gb;
 
         //Update totals
         total = total - 1;
 
-        console.log('total cookies are!', total);
+        // console.log('total cookies are!', total);
         //update total cell
         totalQtyCell.textContent = total;
     }
 })
 
 // Nice now lets just copy and paste lol, and cahnge v names and elements
+
+//lets star with cc!
+
+document.querySelector('#add-cc').addEventListener('click', function() {
+    cc = cc + 1;
+    
+    ccQtyCell.textContent = cc;
+    
+    // console.log('Chocolate Chip + button was clicked!', cc);
+ 
+    total = total + 1;
+    
+     totalQtyCell.textContent = total;
+    // console.log('total cookies are!', total);
+})
+
+document.querySelector('#minus-cc').addEventListener('click', function(){
+    if (cc > 0){
+        cc = cc - 1;
+
+        // console.log('Chocolate Chip - button was clicked!', cc);
+        ccQtyCell.textContent = cc;
+
+        total = total - 1;
+
+        // console.log('total cookies are!', total);
+        totalQtyCell.textContent = total;
+    }
+})
+
+//Working now with sugar Sprinkle!
+
+document.querySelector('#add-sugar').addEventListener('click', function() {
+    sugar = sugar + 1;
+    
+    sugarQtyCell.textContent = sugar;
+    
+    // console.log('Sugar Sprinkle + button was clicked!', sugar);
+ 
+    total = total + 1;
+    
+     totalQtyCell.textContent = total;
+    // console.log('total cookies are!', total);
+})
+
+document.querySelector('#minus-sugar').addEventListener('click', function(){
+    if (sugar > 0){
+        sugar = sugar - 1;
+
+        // console.log('Sugar Sprinkle - button was clicked!', sugar);
+        sugarQtyCell.textContent = sugar;
+
+        total = total - 1;
+
+        // console.log('total cookies are!', total);
+        totalQtyCell.textContent = total;
+    }
+})
