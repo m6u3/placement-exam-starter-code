@@ -39,10 +39,11 @@ document.querySelector('#add-gb').addEventListener('click', function() {
 })
 
 //Event listener for the minus button for gb.
+//no need to create a v for the buttons since we only using them once for the event listeners.
 document.querySelector('#minus-gb').addEventListener('click', function(){
     //To remove the cookie without going below zero we need an if Statement
     if (gb > 0){
-        //this expression will onlu execute if gb is greater than zero!
+        //this expression will only execute if gb is greater than zero!
         gb = gb - 1;
 
         // console.log('Ginger bread - button was clicked!', gb);
